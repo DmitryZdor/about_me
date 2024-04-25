@@ -27,25 +27,33 @@
       margin-right: 1em;
     }
 
-    .box {
-      border: 1px solid #ccc;
+    .header {
+      background-color: #ccc;
       padding: 1em;
-      margin-bottom: 1em;
+    }
+
+    .body {
+      margin-top: 1em;
+    }
+
+    .footer {
+      background-color: #ccc;
+      padding: 1em;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-<div class="photo">
-  <img src="photo.jpg" alt="Фото">
+<div class="header">
+  <h1>Иван Иванов</h1>
+  <address>ул. Ленина, д. 1, г. Москва<br>
+  ivan.ivanov@example.com<br>
+  +7 (912) 345-67-89</address>
 </div>
 
-<h1>Иван Иванов</h1>
-<address>ул. Ленина, д. 1, г. Москва<br>
-ivan.ivanov@example.com<br>
-+7 (912) 345-67-89</address>
+<div class="body">
 
-<div class="box">
   <h2>Опыт работы</h2>
   <ul>
     <li><strong>Python-разработчик</strong>, ООО "Рога и копыта", 2022 - настоящее время
@@ -57,9 +65,7 @@ ivan.ivanov@example.com<br>
       </ul>
     </li>
   </ul>
-</div>
 
-<div class="box">
   <h2>Навыки</h2>
   <h3>Языки программирования</h3>
   <ul>
@@ -112,6 +118,11 @@ ivan.ivanov@example.com<br>
     <li>Опыт работы с файловыми форматами, такими как TOML, YAML (в контексте Docker)</li>
     <li>Умение писать процедуры и функции на языке SQL для PostgreSQL</li>
   </ul>
+
+</div>
+
+<div class="footer">
+  <p>Резюме составлено с использованием HTML и CSS.</p>
 </div>
 
 </body>
