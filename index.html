@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Р РµР·СЋРјРµ</title>
+  <title>Резюме</title>
   <style>
     body {
+      border-radius: 6px;
       font-family: Arial, sans-serif;
       font-size: 14px;
       line-height: 1.6;
-      text-align: center;
+      text-align: left;
     }
 
     h1, h2 {
@@ -24,111 +25,107 @@
     }
 
     .photo {
+      display: block;
+      margin-left: 0px 0px 0px 0px;
+      max-width: 40%;
+      height: auto;
       float: left;
-      margin-right: 1em;
     }
 
     .header {
       background-color: #ccc;
       padding: 1em;
+      border-radius: 6px;
     }
 
     .body {
       margin-top: 1em;
+      margin-left: 5%;
     }
 
     .footer {
       background-color: #ccc;
       padding: 1em;
       text-align: center;
+      border-radius: 6px;
     }
   </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>Р—РґРѕСЂ Р”РјРёС‚СЂРёР№</h1>
-  <address>Рі.РљСЂР°СЃРЅРѕСЏСЂСЃРє<br>
-    <a href="https://t.me/DmitryZdor">РњРѕР№ TР“</a><br>
-    <a href="https://github.com/DmitryZdor">РњРѕР№ Р“РёС‚</a><br>
-    <a href="https://stepik.org/users/385533876/profile">РђРєРєР°СѓРЅС‚ РЅР° Stepik</a><br>
+  <div class="photo">
+      <img src="img/photo.jpg" alt="Фото" width=30% height=auto style="max-width: 100%; height: auto;">
+    </div>
+  <h1>Здор Дмитрий</h1>
+  <address>
+    <a href="https://t.me/DmitryZdor">Мой TГ</a><br>
+    <a href="https://github.com/DmitryZdor">Мой Гит</a><br>
+    <a href="https://stepik.org/users/385533876/profile">Аккаунт на Stepik</a><br>
   +7 (967) 608-25-52</address>
 </div>
 
 <div class="body">
-  <div class="photo">
-    <img src="photo.jpg" alt="Р¤РѕС‚Рѕ">
-  </div>
-  <h2>РћРїС‹С‚ СЂР°Р±РѕС‚С‹</h2>
+  <h2>Опыт работы</h2>
   <ul>
-    <li><strong>РђРЅР°Р»РёС‚РёРє, Python-СЂР°Р·СЂР°Р±РѕС‚С‡РёРє</strong>, "Р”РќРЎ", 2023 - РЅР°СЃС‚РѕСЏС‰РµРµ РІСЂРµРјСЏ
+    <li><strong>Аналитик, Python-разработчик 2023 - настоящее время </br> Компания "DNS" </strong>
       <ul>
-        <li>РЎРµР№С‡Р°СЃ РІ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РІС…РѕРґРёС‚ СЂР°Р·СЂР°Р±РѕС‚РєР° Рё РїРѕРґРґРµСЂР¶РєР° РўР“ Р±РѕС‚РѕРІ,</li>
-        <li>ETL СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РјРѕРґСѓР»РµР№ Python, РєРѕС‚РѕСЂС‹Рµ СЂР°Р·РјРµС‰Р°СЋС‚СЃСЏ РІ РїР»Р°РЅРёСЂРѕРІС‰РёРєРµ Apache Airflow</li>
-        <li>РќР°РїРёСЃР°РЅРёРµ С‚РµСЃС‚РѕРІ РґР»СЏ РїСЂРѕРІРµСЂРєРё РєР°С‡РµСЃС‚РІР° РєРѕРґР°</li>
-        <li>Р Р°Р±РѕС‚Р° РІ РєРѕРјР°РЅРґРµ</li>
+        <li>Сейчас в обязанности входит разработка и поддержка ТГ ботов на Aiogram</li>
+        <li>ETL с использованием модулей Python, которые размещаются в планировщике Apache Airflow</li>
+        <li>Создание отчетов в PowerBi, визуализация;</li>
+        <li>Парсинг сайтов;</li>
       </ul>
+      <li><strong>Достижения</strong>
+      <ul>
+        <li>Создал бота для обработок внутренних заявок Интернет-Магазина</li>
+        <li>Создал бота для Коммерческой службы компании</li>
+        <li>Спарсил данные федерального сайта Радо.рус, которые в дальнейшем используются в Дашборде.</li>
+        <li>Сделал более 20 DAGов на сервере Airflow, которые позволяют
+          автоматизировать процессы между различными источниками данных</li>
+        <li>Написал код который отсылает сообщение в Телеграмм при требуемом статусе DAGa,
+          непосредственно его владельцу, что позволяет оперативно реагировать на инциденты</li>
+        <li>Перенес Боты сервисной службы и Бот Интернет Магазина на новый сервер Linux,
+          что увеличило скорость работы Ботов и уменьшило количество аварийных остановок</li>
+        <li>Используемый стэк: Python 3, Airflow, SMBprotocol, SQLAlchemy </li>
+      </ul>
+
     </li>
   </ul>
 
-  <h2>РќР°РІС‹РєРё</h2>
-  <h3>РЇР·С‹РєРё РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ</h3>
+  <h2>TOPS CROPS</h2>
+  <a href="https://tops-crops.sytes.net">tops-crops.sytes.net</a>
+  <p>
+    Разработал собственный действующий интернет-магазин;</br>
+    - Деплой на сервер (сейчас находится на стадии наполнения базы товарами).</br>
+    Используемый стэк: Python 3, Django, Git, Django REST framework, Celery, Unittest,</br>
+    PostgreSQL, Nginx, Gunicorn, Heroku, VDS, Docker, Celery, Redis, Ubuntu 22.0</br>
+ </p>
+  <h3>HTTP сервис для работы с импортируемыми данными</h3>
+  <a href="https://github.com/DmitryZdor/kaggle-service">kaggle-service</a>
+  <p>
+    Разработал сервис для скачивания данных с kaggle;</br>
+    сервис можно запустить с помощью Docker</br>
+    инструкция по запуску по  <a href="https://github.com/DmitryZdor/kaggle-service">ссылке</a></br>
+    - реализована загрузка данных в формате файлов csv с Kaggle.</br>
+    - Возможность получения данных из конкретного файла с опциональными фильтрацией</br>
+    и сортировкой по одному или нескольким столбцам</br>
+    Используемый стэк: Python 3, FastAPI,  Pydantic, Uvicorn</br>
+    </br>
+ </p>
+
+  <h3>Образование</h3>
   <ul>
-    <li>Python</li>
-    <li>SQL</li>
+    <li><strong>Красноярский государственный технический университет, Красноярск</strong></br>
+    Экономический факультет, </br>Экономика и управление на предприятии (по отраслям)</li>
+    <li><strong>НИУ ИТМО, Анализ данных</strong></br>Аналитик данных</li>
   </ul>
 
-  <h3>Р¤СЂРµР№РјРІРѕСЂРєРё</h3>
-  <ul>
-    <li>Django</li>
-    <li>FastAPI</li>
-  </ul>
 
-  <h3>Р‘Р°Р·С‹ РґР°РЅРЅС‹С…</h3>
-  <ul>
-    <li>PostgreSQL</li>
-    <li>Redis</li>
-  </ul>
-
-  <h3>ORM Рё РјРёРіСЂР°С†РёРё</h3>
-  <ul>
-    <li>SQLAlchemy</li>
-    <li>Alembic</li>
-  </ul>
-
-  <h3>Docker</h3>
-  <ul>
-    <li>РЎРѕР·РґР°РЅРёРµ Dockerfile Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ Docker Compose</li>
-  </ul>
-
-  <h3>РўРµР»РµРіСЂР°Рј-Р±РѕС‚С‹</h3>
-  <ul>
-    <li>РќР°РІС‹РєРё СЂР°Р·СЂР°Р±РѕС‚РєРё Рё РґРµРїР»РѕСЏ С‚РµР»РµРіСЂР°Рј-Р±РѕС‚РѕРІ</li>
-  </ul>
-
-  <h3>РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ</h3>
-  <ul>
-    <li>РќР°РїРёСЃР°РЅРёРµ unit-С‚РµСЃС‚РѕРІ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј Р±РёР±Р»РёРѕС‚РµРє pytest РёР»Рё unittest</li>
-  </ul>
-
-  <h3>Web-СЃРµСЂРІРµСЂС‹</h3>
-  <ul>
-    <li>Uvicorn</li>
-    <li>Gunicorn</li>
-  </ul>
-
-  <h3>Р–РµР»Р°С‚РµР»СЊРЅС‹Рµ РЅР°РІС‹РєРё</h3>
-  <ul>
-    <li>Р‘РёР±Р»РёРѕС‚РµРєРё: Pydantic, SQLAlchemy, Alembic, UVicorn, PyJWT, Aiohttp, Pytest, Flower, Celery</li>
-    <li>РџРѕРЅРёРјР°РЅРёРµ РїСЂРёРЅС†РёРїРѕРІ Р°СЃРёРЅС…СЂРѕРЅРЅРѕРіРѕ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ Рё РјРЅРѕРіРѕРїРѕС‚РѕС‡РЅРѕСЃС‚Рё</li>
-    <li>РћРїС‹С‚ СЂР°Р±РѕС‚С‹ СЃ С„Р°Р№Р»РѕРІС‹РјРё С„РѕСЂРјР°С‚Р°РјРё, С‚Р°РєРёРјРё РєР°Рє TOML, YAML (РІ РєРѕРЅС‚РµРєСЃС‚Рµ Docker)</li>
-    <li>РЈРјРµРЅРёРµ РїРёСЃР°С‚СЊ РїСЂРѕС†РµРґСѓСЂС‹ Рё С„СѓРЅРєС†РёРё РЅР° СЏР·С‹РєРµ SQL РґР»СЏ PostgreSQL</li>
-  </ul>
 
 </div>
 
 <div class="footer">
-  <p>Р РµР·СЋРјРµ СЃРѕСЃС‚Р°РІР»РµРЅРѕ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј HTML Рё CSS.</p>
+  <p>Резюме составлено с использованием HTML и CSS.</p>
 </div>
 
 </body>
